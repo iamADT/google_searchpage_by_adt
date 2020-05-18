@@ -93,7 +93,7 @@ html {
 /* Header CSS Begins Here*/
 
 .header-wrapper,
-.body-main, footer {
+.body-main, .footer-sub-wrapper{
   margin-left: 150px;
 }
 
@@ -133,7 +133,7 @@ header {
   justify-content: space-between;
 }
 
-.body-main, footer {
+.body-main, .footer-sub-wrapper {
   max-width: 650px;
 }
 
@@ -333,6 +333,7 @@ header {
 .long-google-wrapper{
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .long-google {
   display: flex;
@@ -371,4 +372,58 @@ header {
   font-size: 1.8rem;
   padding-bottom: 15px;
   margin-left: 20px;
+}
+
+footer {
+  background: #f2f2f2;
+  color: #505050;
+}
+
+.footer-main-wrapper{
+  border-top: 0.5px solid #ddd;
+}
+
+.footer-sub-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  font-size: 1.4rem;
+}
+
+.footer-top{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-country{
+  padding-right: 10px;
+  border-right: 1px solid #aaa;
+}
+
+.footer-city{
+  padding-left: 10px;
+  display: flex;
+}
+
+.fa-circle{
+  color: #999999;
+  padding: 0px 3px;
+  font-size: 1.0rem;
+  margin: auto;
+}
+
+.footer-city-name{
+  font-weight: 600;
+}
+.footer-bottom{
+  display: grid;
+  grid-template-columns: repeat(4 auto);
+  grid-template-areas: 
+  "help feedback privacy terms";
+  max-width: 300px;
+}
+
+.footer-bottom-link{
+  text-decoration: none;
+  color: #505050;
 }
